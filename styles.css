@@ -71,9 +71,7 @@ h3 {
 
 .scnd-call h2 {
     font-size: 30pt;
-    background-image: linear-gradient(60deg, #fff, #9f9f9f);
-    background-clip: text;
-    color: transparent;
+color: white;
 }
 
 .scnd-call p {
@@ -84,9 +82,7 @@ h3 {
 
 .frst-call h1 {
     font-size: 40pt;
-    background-image: linear-gradient(60deg, #9f9f9f, #ffffff);
-    background-clip: text;
-    color: transparent;
+   color: white;
 }
 
 .frst-call h2 {

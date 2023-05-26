@@ -6,15 +6,26 @@
     box-sizing: border-box;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 html, body {
-
-        background: black;
-        background-image: radial-gradient(rgba(255, 255, 255, 0.365) 1px, transparent 0);
-        background-size: 120px 120px;
-        background-position: -19px -19px;
-
     font-family: 'Raleway', sans-serif;
 }
+
+@media only screen and (max-width: 1300px) {
+    input {
+        width: 70vw !important;
+    }
+  }
 
 .logo-container {
     display: flex;
@@ -26,6 +37,10 @@ html, body {
     top: 0;
     margin: auto;
     width: 100vw;
+    background: black;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.365) 1px, transparent 0);
+    background-size: 120px 120px;
+    background-position: -19px -19px;
 }
 
 .logo-container .logo {
@@ -47,6 +62,60 @@ h1, h2, h3 {
     color: white;
 }
 
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services div {
+    margin: 3rem;
+}
+
+.services div p {
+    padding: 0;
+}
+
+label {
+    color: white;
+    margin-top: 2rem;
+}
+
+input {
+    width: 30rem;
+    padding: 0.6rem;
+    font-size: 12pt;
+    border-radius: 0.3rem;
+    outline: none;
+}
+
+.form {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: 80vh;
+    background: black;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.365) 1px, transparent 0);
+    background-size: 120px 120px;
+    background-position: -19px -19px;
+}
+
+.thrd-call {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: black;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.365) 1px, transparent 0);
+    background-size: 120px 120px;
+    background-position: -19px -19px;
+}
+
 .frst-call {
     height: 100vh;
     text-align: center;
@@ -55,10 +124,19 @@ h1, h2, h3 {
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    background: black;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.365) 1px, transparent 0);
+    background-size: 120px 120px;
+    background-position: -19px -19px;
 }
 
-.scnd-call {
+.scnd-call,.frth-call {
     text-align: center;
+    background: rgb(239, 239, 239);
+    background-image: radial-gradient(rgba(0, 0, 0, 0.678) 1px, transparent 0);
+    background-size: 120px 120px;
+    background-position: -19px -19px;
+    padding: 4rem 0;
 }
 
 h3 {
@@ -66,15 +144,26 @@ h3 {
 }
 
 
-.scnd-call h2 {
+.scnd-call h2,.frth-call h2  {
+    font-size: 30pt;
+color: black;
+}
+
+.thrd-call h2 {
     font-size: 30pt;
 color: white;
 }
 
-.scnd-call p {
+.thrd-call p {
     font-size: 15pt;
     color: white;
     padding: 1.5rem 0;
+}
+
+.scnd-call p, .frth-call p {
+    font-size: 15pt;
+    color: black;
+    padding: 1rem 0;
 }
 
 .frst-call h1 {
@@ -84,12 +173,12 @@ color: white;
 
 .frst-call h2 {
     font-size: 16pt;
-    color: #9f9f9f;
+    color: #e5e5e5;
     font-weight: 300;
 }
 
-.frst-call a, .scnd-call a {
-   background: white;
+a {
+   background: rgb(52, 213, 92);
    color: black;
    padding: 1rem;
    font-size: 15pt;
@@ -98,6 +187,18 @@ color: white;
    cursor: pointer;
    transition: 400ms;
    margin-top: 1rem;
+}
+
+button {
+    background: white;
+    color: black;
+    padding: 1rem;
+    font-size: 15pt;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: 400ms;
+    margin-top: 1rem;
 }
 
  .arrows {
@@ -164,6 +265,6 @@ color: white;
  }
 
 .result p:last-child {
-   font-size: 10pt;
+   font-size: 7pt;
    font-weight: 400;
 }
